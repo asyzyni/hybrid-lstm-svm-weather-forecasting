@@ -1,0 +1,7 @@
+Model,time_steps,LSTM units,learning rate,C,gamma,epsilon,epochs,batch size,optimizer,loss,kernel,Optuna trials,Optuna objective,seed,final seeds
+Base SVR,3,–,–,2.1003,0.1236,0.02119,–,–,–,ε-insensitive,RBF,30,validation RMSE (scaled),42,1
+W-SVR,4,–,–,0.1843,0.64354,0.0164,–,–,–,ε-insensitive,RBF,30,validation RMSE (scaled),42,1
+Base LSTM,5,64,0.001,–,–,–,20,32,Adam,MSE,–,30,validation RMSE (scaled),42,5
+W-LSTM,5,32,0.001,–,–,–,20,32,Adam,MSE,–,30,validation RMSE (scaled),42,5
+Base LSTM-SVR,4,32,0.001,65.8411,0.4836,0.0157,20,32,Adam,MSE,RBF,30,validation RMSE (scaled),42,5
+W-LSTM-SVR,4,32,0.001,65.8411,0.4836,0.0157,20,32,Adam,MSE,RBF,30,validation RMSE (scaled),42,5

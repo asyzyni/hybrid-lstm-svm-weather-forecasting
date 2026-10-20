@@ -1,0 +1,12 @@
+| Model | Time steps | RMSE (mm) | MAE (mm) | RMSE (scaled) |
+|---|---|---|---|---|
+| Base SVR | 3 | 7.179 | 3.307 | 0.0631 |
+| W-SVR | 4 | 7.160 | 3.070 | 0.0630 |
+| Base LSTM | 5 | 7.306 ± 0.204 | 3.942 ± 0.741 | 0.0643 ± 0.0018 |
+| W-LSTM | 5 | 7.362 ± 0.204 | 4.005 ± 0.748 | 0.0648 ± 0.0018 |
+| Base LSTM-SVR | 4 | 7.213 ± 0.048 | 3.019 ± 0.008 | 0.0634 ± 0.0004 |
+| W-LSTM-SVR | 4 | 7.333 ± 0.058 | 3.060 ± 0.050 | 0.0645 ± 0.0005 |
+| Persistence (t+1 = t) | – | 10.320 | 3.459 | 0.0908 |
+| Train mean | – | 8.184 | 4.627 | 0.0720 |
+
+Test period 2022-04-03 to 2022-12-31 (n = 273 days). LSTM-based models: mean ± SD over 5 seeds; SVR and baselines are deterministic.
